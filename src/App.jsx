@@ -9,7 +9,7 @@ const App = () => {
 		<DataProvider>
 			<div className="main">
 				<h1>
-					buy<span>list</span>
+					buy<span>List</span>
 				</h1>
 				<FormInput />
 				<List />
