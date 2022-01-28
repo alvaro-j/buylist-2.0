@@ -4,7 +4,7 @@ import ListItem from "./ListItem";
 import { DataContext } from "./DataProvider";
 
 const List = () => {
-	const [itens, setItens] = React.useContext(DataContext);
+	const [itens, setItems] = React.useContext(DataContext);
 	console.log(itens);
 	return (
 		<ul>
