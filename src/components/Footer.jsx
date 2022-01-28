@@ -7,7 +7,7 @@ const Footer = () => {
 				<input type="checkbox" name="all" id="all" />
 				ALL
 			</label>
-			<p>You have 0 itens to buy</p>
+			<p>You have 0 items to buy</p>
 			<button id="delete">Delete</button>
 		</div>
 	);
