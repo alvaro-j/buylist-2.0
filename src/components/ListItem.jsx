@@ -1,11 +1,11 @@
 import React from "react";
 
-const ListItem = () => {
+const ListItem = ({item, id}) => {
 	return (
 		<li>
-			<label htmlFor="">
-				<input type="checkbox" id="" />
-				Chicken breast
+			<label htmlFor={id}>
+				<input type="checkbox" id={id} />
+				{item.name}
 			</label>
 			<button className="btn-yellow">Edit</button>
 		</li>
