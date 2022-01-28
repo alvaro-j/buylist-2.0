@@ -4,13 +4,13 @@ import ListItem from "./ListItem";
 import { DataContext } from "./DataProvider";
 
 const List = () => {
-	const [todos, setTodos] = React.useContext(DataContext);
-	console.log(todos);
+	const [itens, setItens] = React.useContext(DataContext);
+	console.log(itens);
 	return (
 		<ul>
-			<ListItem />
-			<ListItem />
-			<ListItem />
+			{itens.map((item, index) => (
+				<ListItem key={index} item={item} id={index} />
+			))}
 		</ul>
 	);
 };
