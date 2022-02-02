@@ -18,9 +18,11 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Overview🎯
 
+Rebuild of the buyList project. This time it was build with React.js using Context API.
+
 ### Links🔗
 
-- Live Site URL: [Weather App](https://weather-app-jet-iota.vercel.app/)
+- Live Site URL: [Buylist 2.0](https://buylist-2-0.vercel.app/)
 
 ## My process🧩
 
