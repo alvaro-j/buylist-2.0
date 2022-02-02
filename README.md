@@ -37,9 +37,9 @@ Rebuild of the buyList project. This time it was build with React.js using Conte
 
 ### What I learned📝
 
-- Soon...
+- Use Context API:
 ```js
-
+return <DataContext.Provider value={[items, setItems]}>{children}</DataContext.Provider>;
 ```
 ### Useful resources
 
