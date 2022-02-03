@@ -15,10 +15,21 @@ const List = () => {
 			setItems(newItems);
 		});
 	};
+
+	const handleEditItems = (editvalue, id) => {
+		const newItems = [...items];
+		newItems.forEach((item, index) => {
+			if (index === id) {
+				item.name = editvalue;
+			}
+		});
+		setItems(newItems)
+	};
+
 	return (
 		<ul>
 			{items.map((item, index) => (
-				<ListItem key={index} item={item} id={index} checkComplete={switchComplete} />
+				<ListItem key={index} item={item} id={index} checkComplete={switchComplete} handleEditItems={handleEditItems}/>
 			))}
 		</ul>
 	);
