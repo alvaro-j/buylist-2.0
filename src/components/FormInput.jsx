@@ -7,12 +7,22 @@ const FormInput = () => {
 
 	const addItem = (e) => {
 		e.preventDefault();
-		setItems([...items, {name: itemName, complete: false }])
+		setItems([...items, { name: itemName, complete: false }]);
 		setItemName("");
 	};
+
 	return (
 		<form autoComplete="off" onSubmit={addItem}>
-			<input type="text" name="items" id="items" required placeholder="Which items would you like to buy?" value={itemName} onChange={(e) => setItemName(e.target.value.toLocaleLowerCase())}></input>
+			<input
+				type="text"
+				name="items"
+				id="items"
+				required
+				placeholder="Which items would you like to buy?"
+				value={itemName}
+				onChange={(e) => setItemName(e.target.value.toLocaleLowerCase())}
+				autoFocus
+			></input>
 			<button type="submit">Add</button>
 		</form>
 	);
