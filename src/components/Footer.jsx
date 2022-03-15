@@ -27,10 +27,16 @@ const Footer = () => {
 			) : (
 				<div className="row">
 					<label htmlFor="all">
-						<input type="checkbox" name="all" id="all" onChange={handleCheckAll} checked={checkAll} />
+						<input
+							type="checkbox"
+							name="all"
+							id="all"
+							onChange={handleCheckAll}
+							checked={checkAll}
+						/>
 						ALL
 					</label>
-					<p>You have {items.filter(item => item.complete === false).length} items to buy</p>
+					<p>You have {items.filter((item) => item.complete === false).length} items to buy</p>
 					<button id="delete" onClick={handleDeleteItem}>
 						Delete
 					</button>

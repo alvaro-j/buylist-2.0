@@ -8,10 +8,10 @@ const ListItem = ({ item, id, checkComplete, handleEditItems }) => {
 	};
 	const handleSave = () => {
 		setEdit(false);
-		if(editValue) {
-			handleEditItems(editValue, id)
+		if (editValue) {
+			handleEditItems(editValue, id);
 		} else {
-			setEditValue(item.name)
+			setEditValue(item.name);
 		}
 	};
 
@@ -35,7 +35,12 @@ const ListItem = ({ item, id, checkComplete, handleEditItems }) => {
 		return (
 			<li>
 				<label htmlFor={id} className={item.complete ? "active" : ""}>
-					<input type="checkbox" id={id} checked={item.complete} onChange={() => checkComplete(id)} />
+					<input
+						type="checkbox"
+						id={id}
+						checked={item.complete}
+						onChange={() => checkComplete(id)}
+					/>
 					{item.name}
 				</label>
 				<button className="btn-yellow" disabled={item.complete} onClick={handleEdit}>

@@ -23,13 +23,19 @@ const List = () => {
 				item.name = editvalue;
 			}
 		});
-		setItems(newItems)
+		setItems(newItems);
 	};
 
 	return (
 		<ul>
 			{items.map((item, index) => (
-				<ListItem key={index} item={item} id={index} checkComplete={switchComplete} handleEditItems={handleEditItems}/>
+				<ListItem
+					key={index}
+					item={item}
+					id={index}
+					checkComplete={switchComplete}
+					handleEditItems={handleEditItems}
+				/>
 			))}
 		</ul>
 	);
